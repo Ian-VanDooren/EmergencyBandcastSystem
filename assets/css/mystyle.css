@@ -1,5 +1,5 @@
 #main {
-    background: url(EBSWebWallpaperGrey.jpg) no-repeat center center fixed !important;
+    background: url(EBSWebWallpaperGrey.png) no-repeat center center fixed !important;
     -webkit-backgroung-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
@@ -53,6 +53,7 @@
 }
 .icon-box {
     padding-left: 40px;
+    padding-top: 5px;
 }
 
 .support {
@@ -71,9 +72,15 @@
         width: 99vw;
     }
 }
-@media (max-width: 1024px){
+@media (max-width: 1300px){
     #twitch-embed{
         height: 60vh;
+    }
+    #payment-links {
+        display: contents;
+    }
+    .payment-link {
+        width: 100px;
     }
 }
 .payment-link {
