@@ -1,12 +1,16 @@
-#main {
-    background: url(EBSWebWallpaperGrey.png) no-repeat center center fixed !important;
-    -webkit-backgroung-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-    background-size: 100% 100% !important;
-
+    #main {
+        background: url(EBSWebWallpaperGrey.png) no-repeat center center fixed; 
+    }
+@media (min-width: 400px){
+    #main {
+        background: url(EBSWebWallpaperGrey.png) no-repeat center center fixed !important;
+        -webkit-backgroung-size: cover !important;
+        -moz-background-size: cover !important;
+        -o-background-size: cover !important;
+        background-size: 100% 100% !important;
+    
+    }
 }
-
 
 .nav-inner {
     font-family: 'Archivo Black', sans-serif;
