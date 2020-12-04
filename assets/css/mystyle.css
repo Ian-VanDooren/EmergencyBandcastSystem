@@ -44,6 +44,11 @@
 .support {
     padding-left: 15%;
 }
+
+.upcoming li {
+    font-size: 20px;
+}
+    
 @media (min-width: 1024px){
     .row.bandcast{
         height: 90vh;
@@ -88,6 +93,20 @@
     #mobile-links {
         display: none;
     }
+}
+
+.row .marquee {
+    display: table;
+    width: 100%;
+}
+
+.upcoming {
+    display: table-cell;
+}
+
+
+#ayers {
+    font-size: 20px;
 }
 
 
