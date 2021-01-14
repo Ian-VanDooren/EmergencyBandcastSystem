@@ -110,3 +110,8 @@
 }
 
 
+/* Add top and bottom borders on entire marquee */
+#marquee {
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
