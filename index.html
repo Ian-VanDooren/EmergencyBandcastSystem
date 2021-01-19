@@ -90,10 +90,37 @@
       <div class="container bandcast">
         <div class="row bandcast">
           <div class="col-lg-11" data-aos="fade-right">
-            <div id="twitch-embed" class="embed-responsive"></div>
+
+            <!--Twitch non interactive video only stream
+            <iframe
+            src="https://player.twitch.tv/?channel=emergencybandcastsystem&parent=localhost:8080"
+            height="854"
+            width="480"
+            allowfullscreen="true">
+            </iframe> -->
+
+
+            <!--Restream player Embed-->
+           <!-- <iframe src="https://embed.restream.io/player/index.html?token=4b9ae146a0ad80d702a27a4104ddca44"
+            width="960" height="576" frameborder="0"
+                
+            allowfullscreen></iframe><p>Powered by <a
+            href="https://restream.io">Restream.io</a></p> -->
+          
+       
+          <!--Twitch Chat Embed
+          <div class="row" id="twitch-chat">
+          <iframe src="https://www.twitch.tv/embed/channel=emergencybandcastsystem/chat?parent=localhost:8080"
+            height="300"
+            width="200">
+            </iframe>
+          </div> -->
+
+             <!--Twitch interactive stream and chat embed-->
+          <div id="twitch-embed" class="embed-responsive"></div>   
 
             <!-- Load the Twitch embed script -->
-            <script src="https://embed.twitch.tv/embed/v1.js"></script>
+            <script src="https://embed.twitch.tv/embed/v1.js"></script> 
         
             <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
             <script type="text/javascript">
@@ -110,7 +137,7 @@
                 autoplay: "true",
               });
             </script>
-          </div>
+          </div> 
           
         <div class="container-fluid row support" id="payment-links">
           <div class="icon-box mt-lg-0" data-aos="fade-up">              
@@ -136,7 +163,8 @@
             <h4><img src="assets\img\EBS_Logo_mobile.jpg" alt="EBS Logo" class="payment-link img-responsive"></h4>
           </div>       
           <div class="icon-box mt-lg-0 section-title" data-aos="fade-up">          
-            <h2>100% of Tips<br>Go To The<br>Artist On Screen</h2>          
+            <h2>Click Links To Donate</h2>         
+            <h2>100% Goes To<br> Artist On Screen</h2>          
              </div>           
               <div class="icon-box mt-lg-0" data-aos="fade-up">              
                 <h4><a href="https://paypal.me/jesset253?locale.x=en_US" target="_blank"><img src="assets\img\paypal-logo-mobile.png" alt="paypal" class="payment-link img-responsive"></a></h4>
@@ -162,30 +190,10 @@
           <h2 id="upcoming">Upcoming Streams</h2>
         </div>
 
-        <div class="row marquee" id="marquee">
-          <div class="col-lg-3 col-md-3 upcoming"> 
-            <div class="box" data-aos="zoom-in" data-aos-delay="100">
-              <h4><a href="https://www.facebook.com/ClintonFearonMusic"  target="_blank">Clinton Fearon</a></h4>      
-              <h3>Birthday Special!</h3>
-              <ul> 
-                <li>SUNDAY</li>              
-                <li>January 17th</li>
-                <li>10:00 AM PST</li>                             
-              </ul>                               
-            </div> 
-          </div> 
-          <div class="col-lg-3 col-md-3 upcoming"> 
-            <div class="box" data-aos="zoom-in" data-aos-delay="100">
-              <h4><a href="https://www.stephanieannejohnsonmusic.com/"  target="_blank">Stephanie Anne Johnson</a></h4>      
-              <h3>Talkin Bout The King</h3>
-              <ul> 
-                <li>MONDAY</li>              
-                <li>January 18th</li>
-                <li>7:00 PM PST</li>                             
-              </ul>                               
-            </div> 
-          </div>           
-          <div class="col-lg-3 col-md-3 upcoming"> 
+        <div class="row marquee" id="marquee">           
+          <div class="col-lg-2 col-md-4 marquee"></div>
+
+          <div class="col-lg-4 col-md-4 upcoming"> 
             <div class="box" data-aos="zoom-in" data-aos-delay="100">
               <h4><a href="https://www.facebook.com/ianayersandthesoulpurpose/"  target="_blank">Ian Ayers</a></h4>      
               <h3>Paying Respect</h3>
@@ -196,7 +204,7 @@
               </ul>                               
             </div> 
           </div>
-          <div class="col-lg-3 col-md-3 upcoming"> 
+          <div class="col-lg-4 col-md-4 upcoming"> 
             <div class="box" data-aos="zoom-in" data-aos-delay="100">
               <h4><a href="https://www.facebook.com/jon.k.lindsay.9"  target="_blank">Kurt Lindsay</a></h4>      
               <h3>HD LIVESTREAM</h3>
@@ -207,8 +215,8 @@
               </ul>                               
             </div> 
           </div>
-          <div class="col-lg-2 col-md-4 upcoming">            >              
-            </div>
+          <div class="col-lg-2 col-md-2 upcoming"> </div>        
+            
           </div>  
 
         </div>
